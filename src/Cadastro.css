@@ -9,6 +9,13 @@
     background-repeat: no-repeat; /* Para evitar a repetição da imagem */
     background-attachment: fixed; /* Para manter a imagem fixa enquanto a página rola */
     color: #ffffff; /* Cor do texto (opcional) */
+    overflow: hidden;
+  }
+
+  .imagem-rodape {
+    margin-top: 40px;
+    width: 220px; /* Largura desejada */
+    height: auto; /* Altura automática para manter a proporção */
   }
   
   #banner {

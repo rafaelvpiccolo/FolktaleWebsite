@@ -1,7 +1,75 @@
+import { useState } from 'react';
 import './App.css';
 import './Cadastro.css';
+import logoRodape from './assets/folktale_logo.png'
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 function App() {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [idade, setIdade] = useState(null);
+  const [idadeMin] = useState(18);
+  const [senha, setSenha] = useState("");
+  const [senhaConfirm, setSenhaConfirm] = useState("");
+
+  const calcularIdade = (dataNasc) => {
+    const hoje = new Date();
+    const dataNascimento = new Date(dataNasc);
+    const idade = hoje.getFullYear() - dataNascimento.getFullYear();
+    const diferencaMeses = hoje.getMonth() - dataNascimento.getMonth();
+
+    if (diferencaMeses < 0 || (diferencaMeses === 0 && hoje.getDate() < dataNascimento.getDate())) {
+      return idade - 1;
+    }
+
+    return idade;
+  };
+
+  const handleDataNascimento = (dataNasc) => {
+    setIdade(dataNasc)
+  }
+
+  const handleNome = (event) => {
+    const novoValor = event.target.value;
+    setNome(novoValor)
+  }
+
+  const handleEmail = (event) => {
+    const novoValor = event.target.value;
+    setEmail(novoValor)
+  }
+
+  const handleSenha = (event) => {
+    const novoValor = event.target.value;
+    console.log(novoValor)
+    setSenha(novoValor)
+  }
+
+  const handleSenhaConfirm = (event) => {
+    const novoValor = event.target.value;
+    setSenhaConfirm(novoValor)
+  }
+
+  const handleEnviarCadastro = () => {
+    if(senha !== senhaConfirm) {
+      alert('As senhas não correspondem. Por favor, verifique e tente novamente.');
+    }
+    else if(handleValidarIdade) {
+
+    }
+  }
+
+  const handleValidarIdade = () => {
+    const age = calcularIdade(idade);
+    if (age >= idadeMin) {
+      return true;
+    } else {
+      alert('Você deve ter pelo menos ' + idadeMin + ' anos.');
+      return false;
+    }
+  };
+
   return (
     <div className="cadastro-container">
       {/* Banner com imagem e texto */}
@@ -14,32 +82,35 @@ function App() {
         <form>
         <div className="form-group">
             <label className="label" htmlFor="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" className="input-field" required />
+            <input value={nome} onChange={handleNome} type="text" id="nome" name="nome" className="input-field" required />
           </div>
 
           <div className="form-group">
             <label className="label" htmlFor="idade">Idade:</label>
-            <input type="number" id="idade" name="Idade" className="input-field" required />
+            <DatePicker selected={idade} onChange={handleDataNascimento} dateFormat="dd/MM/yyyy" className="input-field" required />
           </div>
 
           <div className="form-group">
             <label className="label" htmlFor="email">Email:</label>
-            <input type="text" id="email" name="email" className="input-field" required />
+            <input value={email} onChange={handleEmail} type="text" id="email" name="email" className="input-field" required />
           </div>
 
           <div className="form-group">
             <label className="label" htmlFor="senha">Senha:</label>
-            <input type="text" id="senha" name="senha" className="input-field" required />
+            <input value={senha} onChange={handleSenha} type="password" id="senha" name="senha" className="input-field" required />
           </div>
 
           <div className="form-group">
             <label className="label" htmlFor="senhaConfirma">Confirmar Senha:</label>
-            <input type="text" id="senhaConfirma" name="senhaConfirma" className="input-field" required />
+            <input value={senhaConfirm} onChange={handleSenhaConfirm} type="password" id="senhaConfirma" name="senhaConfirma" className="input-field" required />
           </div>
 
           <button type="submit" className="button">Enviar</button>
         </form>
       </div>
+      <footer>
+        <img src={logoRodape} alt="logo" className="imagem-rodape" />
+      </footer>
     </div>
   );
 }
