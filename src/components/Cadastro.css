@@ -1,13 +1,15 @@
+body {
+    background-image: url('../assets/background_folktale.jpg'); /* Substitua pelo caminho real da sua imagem */
+    background-size: cover; /* Para cobrir todo o contêiner */
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+    background-attachment: fixed; /* Para manter a imagem fixa enquanto a página rola */
+}
+
 .cadastro-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: url('./assets/background_folktale.jpg'); /* Substitua pelo caminho real da sua imagem */
-    background-size: cover; /* Para cobrir todo o contêiner */
-    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
-    background-attachment: fixed; /* Para manter a imagem fixa enquanto a página rola */
     color: #ffffff; /* Cor do texto (opcional) */
     overflow: hidden;
   }
@@ -22,6 +24,7 @@
     text-align: center;
     font-size: larger;
     margin-bottom: 20px;
+    font-size: smaller;
     font-family: 'Dogica';
   }
   
@@ -84,7 +87,7 @@
 
   @font-face {
     font-family: 'Dogica'; /* Nome da fonte */
-    src: url('./fonts/dogica.woff') format('woff'); /* Caminho para o arquivo de fonte */
+    src: url('../fonts/dogica.woff') format('woff'); /* Caminho para o arquivo de fonte */
     /* Outros formatos de fonte, se necessário */
     font-weight: bold; /* Peso da fonte */
     font-style: normal; /* Estilo da fonte */

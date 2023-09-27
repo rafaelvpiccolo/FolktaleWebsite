@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import './App.css';
 import './Cadastro.css';
-import logoRodape from './assets/folktale_logo.png'
+import logoRodape from '../assets/folktale_logo.png'
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-function App() {
+function Cadastro() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [idade, setIdade] = useState(null);
@@ -92,7 +91,7 @@ function App() {
 
           <div className="form-group">
             <label className="label" htmlFor="email">Email:</label>
-            <input value={email} onChange={handleEmail} type="text" id="email" name="email" className="input-field" required />
+            <input value={email} onChange={handleEmail} type="email" id="email" name="email" className="input-field" required />
           </div>
 
           <div className="form-group">
@@ -115,4 +114,4 @@ function App() {
   );
 }
 
-export default App;
+export default Cadastro;
