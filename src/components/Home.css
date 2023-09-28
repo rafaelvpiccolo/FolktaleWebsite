@@ -31,6 +31,8 @@ body {
   .header-buttons {
     display: flex;
     gap: 10px;
+    outline: auto;
+    outline-style: auto;
   }
   
   .header-buttons button {
@@ -69,34 +71,33 @@ body {
     cursor: pointer;
     font-family: 'Dogica';
   }
-  
-  /* Barra Lateral (Ocultar em telas pequenas) */
-  .sidebar {
-    display: none;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
   }
   
-  .sidebar button {
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 10px 0;
-    cursor: pointer;
-  }
-  
-  /* Conteúdo Principal */
-  main {
-    margin-left: 0; /* Sem margem à esquerda em telas pequenas */
-    padding: 20px;
-  }
-  
-  .sinopse h2 {
-    font-size: 24px;
+  .content {
+    text-align: start;
+    line-height: 1.5;
     font-family: 'Dogica';
-    margin-bottom: 10px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 25px;
+    
+  }
+
+  .content img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção */
   }
 
   @font-face {
@@ -128,7 +129,18 @@ body {
   
     /* Conteúdo Principal (Adiciona margem à esquerda em telas maiores) */
     main {
-      margin-left: 240px;
+
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      align-items: flex-start; /* Alinha o conteúdo no topo verticalmente em dispositivos móveis */
+      margin-top: 90px;
+    }
+
+    .content {
+      font-size: x-small;
     }
   }
   

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Home.css';
 import logo from '../assets/folktale_logo.png'
+import gameImage from '../assets/gameImage.png'
 
 function Home() {
     return (
@@ -17,17 +18,11 @@ function Home() {
         <button>LOGAR</button>
       </div>
     </header>
-      <main>
-        <section className="sinopse">
-          <h2>Folk Tale</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida orci eget augue luctus,
-            nec dignissim elit posuere.
-          </p>
-        </section>
-        <section className="imagem">
-          {/* Insira a imagem desejada aqui */}
-        </section>
+      <main className='container'>
+      <div class="content">
+        <p>FolkTale é um emocionante jogo de aventura em que os jogadores exploram um mundo mágico cheio de criaturas fantásticas, desafios intrigantes e histórias envolventes. O jogo combina elementos de RPG de combate em turnos e exploração para proporcionar uma experiência única e cativante para os jogadores.</p>
+        <img src={gameImage} alt="Imagem do Jogo" />
+      </div>
       </main>
     </div>
     );
