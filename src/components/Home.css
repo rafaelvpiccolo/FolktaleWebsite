@@ -44,7 +44,7 @@ body {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-family: 'Dogica';
   }
   

@@ -10,7 +10,7 @@ function Home() {
       <img src={logo} alt="Título do Jogo" className='imagem-logo'/>
       <div className='header-buttons'>
         <button className='buttons'>CADASTRO</button>
-        <button className='buttons'>SOBRE NÓS</button>
+        <button className='buttons'>SOBRE</button>
       </div>
       <div className="login-form">
         <input type="text" placeholder="LOGIN" />
