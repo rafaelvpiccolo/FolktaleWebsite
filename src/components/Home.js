@@ -9,8 +9,8 @@ function Home() {
       <header>
       <img src={logo} alt="Título do Jogo" className='imagem-logo'/>
       <div className='header-buttons'>
-        <button>Cadastro</button>
-        <button>Sobre Nós</button>
+        <button className='buttons'>CADASTRO</button>
+        <button className='buttons'>SOBRE NÓS</button>
       </div>
       <div className="login-form">
         <input type="text" placeholder="LOGIN" />
