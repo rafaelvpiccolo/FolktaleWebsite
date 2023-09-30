@@ -1,4 +1,5 @@
 // Navigation.js - Componente de Navegação
+//Eu nao estou vendo utilidade que importa o Link, e eu passei a utilizar o Link diretamente na Home, por exemplo.
 
 import React from 'react';
 import { Link } from 'react-router-dom';

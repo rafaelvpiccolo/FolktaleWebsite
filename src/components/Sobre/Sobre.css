@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  width: 100%;
+  height: 100%;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.imagem-logo {
+  width: 80px;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  margin: auto;
+  font-family: 'Dogica';
+}
+
+.integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 32vh;
+  margin: auto;
+  padding: 0.4em;
+  text-align: center;
+}
+
+.sobreIntegrante {
+  text-align: start;
+  line-height: 1.5;
+  font-family: 'Dogica';
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.nomeIntegrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-family: 'Dogica';
+  width: 50%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 32vh;
+    margin: 1rem;
+    padding: 0.4em;
+  }
+
+  .integrante:nth-child(odd) {
+    margin-right: 1rem;
+  }
+}

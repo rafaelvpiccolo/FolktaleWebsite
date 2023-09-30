@@ -1,0 +1,97 @@
+body {
+    background-image: url('../../assets/background_folktale.jpg'); /* Substitua pelo caminho real da sua imagem */
+    background-size: cover; /* Para cobrir todo o contêiner */
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+    background-attachment: fixed; /* Para manter a imagem fixa enquanto a página rola */
+}
+
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Cor do texto (opcional) */
+    overflow: hidden;
+  }
+
+  .imagem-rodape {
+    margin-top: 40px;
+    width: 220px; /* Largura desejada */
+    height: auto; /* Altura automática para manter a proporção */
+  }
+  
+  #banner {
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 20px;
+    font-size: smaller;
+    font-family: 'Dogica';
+  }
+  
+  #form-container {
+    background-color: #795C34;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  /* Estilo base para campos de entrada de texto */
+.input-field {
+    display: block;
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  /* Estilo para o rótulo dos campos */
+  .label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  /* Estilo quando o campo está focado */
+  .input-field:focus {
+    border-color: #1976D2; /* Cor de foco do Material Design */
+    outline: none;
+  }
+  
+  /* Estilo para o botão */
+  .button {
+    background-color: #3F301D; /* Cor de botão do Material Design */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Define o botão como um bloco para alinhar horizontalmente */
+    margin: 0 auto; /* Define as margens esquerda e direita como 'auto' para centralizar horizontalmente */
+  }
+  
+  /* Estilo quando o botão está em foco ou hover */
+  .button:focus,
+  .button:hover {
+    background-color: #241502; /* Cor de foco/hover do Material Design */
+    outline: none;
+  }
+
+  @font-face {
+    font-family: 'Dogica'; /* Nome da fonte */
+    src: url('../../fonts/dogica.woff') format('woff'); /* Caminho para o arquivo de fonte */
+    /* Outros formatos de fonte, se necessário */
+    font-weight: bold; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+  }
+  
+  /* Adicione outros estilos de acordo com suas preferências */
+  

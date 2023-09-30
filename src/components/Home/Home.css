@@ -1,0 +1,149 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #795C34; /* Cor primária do Material Design */
+    color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do Material Design */
+    display: flex;
+    flex-wrap: wrap; /* Quebra para a próxima linha em telas pequenas */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imagem-logo {
+    width: 150px; /* Largura desejada */
+    height: auto; /* Altura automática para manter a proporção */
+  }
+  
+  /* Título */
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .buttons {
+    outline: auto;
+    outline-style: auto;
+  }
+  
+  /* Botões "Cadastro" e "Sobre Nós" */
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header-buttons button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Dogica';
+  }
+  
+  /* Campos de Login */
+  .login-form {
+    display: flex;
+    flex-wrap: wrap; /* Quebra para a próxima linha em telas pequenas */
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Dogica';
+  }
+  
+  .login-form button {
+    background-color: #4CAF50; /* Cor de destaque do Material Design */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Dogica';
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  .content {
+    text-align: start;
+    line-height: 1.5;
+    font-family: 'Dogica';
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 25px;
+    
+  }
+
+  .content img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção */
+  }
+
+  @font-face {
+    font-family: 'Dogica'; /* Nome da fonte */
+    src: url('../../fonts/dogica.woff') format('woff'); /* Caminho para o arquivo de fonte */
+    /* Outros formatos de fonte, se necessário */
+    font-weight: bold; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+  }
+  
+  /* Estilos adicionais, como a imagem, podem ser adicionados conforme necessário */
+  
+  /* Media query para telas maiores (exemplo: desktop) */
+  @media (min-width: 768px) {
+    /* Header */
+    header {
+      flex-wrap: nowrap; /* Não quebra para a próxima linha */
+    }
+  
+    /* Campos de Login */
+    .login-form {
+      margin-left: auto; /* Move para a direita em telas maiores */
+    }
+  
+    /* Barra Lateral (Aparece em telas maiores) */
+    .sidebar {
+      display: block;
+    }
+  
+    /* Conteúdo Principal (Adiciona margem à esquerda em telas maiores) */
+    main {
+
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      align-items: flex-start; /* Alinha o conteúdo no topo verticalmente em dispositivos móveis */
+      margin-top: 90px;
+    }
+
+    .content {
+      font-size: x-small;
+    }
+  }
+  
