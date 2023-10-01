@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/folktalewebsite/static/css/main.90931784.css",
-    "main.js": "/folktalewebsite/static/js/main.c1ef0f6b.js",
-    "static/js/787.973c7892.chunk.js": "/folktalewebsite/static/js/787.973c7892.chunk.js",
-    "static/media/gameImage.png": "/folktalewebsite/static/media/gameImage.ff7e94d203e09c0dd12a.png",
-    "static/media/folktale_logo.png": "/folktalewebsite/static/media/folktale_logo.38c0b603a7e348d02372.png",
-    "static/media/background_folktale.jpg": "/folktalewebsite/static/media/background_folktale.6875f1ffd6547d31df61.jpg",
-    "static/media/dogica.woff": "/folktalewebsite/static/media/dogica.c5fc757a944c4bd75c4a.woff",
-    "index.html": "/folktalewebsite/index.html",
-    "main.90931784.css.map": "/folktalewebsite/static/css/main.90931784.css.map",
-    "main.c1ef0f6b.js.map": "/folktalewebsite/static/js/main.c1ef0f6b.js.map",
-    "787.973c7892.chunk.js.map": "/folktalewebsite/static/js/787.973c7892.chunk.js.map"
+    "main.css": "/FolktaleWebsite/static/css/main.f121d698.css",
+    "main.js": "/FolktaleWebsite/static/js/main.5f544c06.js",
+    "static/js/787.973c7892.chunk.js": "/FolktaleWebsite/static/js/787.973c7892.chunk.js",
+    "static/media/gameImage.png": "/FolktaleWebsite/static/media/gameImage.ff7e94d203e09c0dd12a.png",
+    "static/media/folktale_logo.png": "/FolktaleWebsite/static/media/folktale_logo.38c0b603a7e348d02372.png",
+    "static/media/background_folktale.jpg": "/FolktaleWebsite/static/media/background_folktale.6875f1ffd6547d31df61.jpg",
+    "static/media/dogica.woff": "/FolktaleWebsite/static/media/dogica.c5fc757a944c4bd75c4a.woff",
+    "index.html": "/FolktaleWebsite/index.html",
+    "main.f121d698.css.map": "/FolktaleWebsite/static/css/main.f121d698.css.map",
+    "main.5f544c06.js.map": "/FolktaleWebsite/static/js/main.5f544c06.js.map",
+    "787.973c7892.chunk.js.map": "/FolktaleWebsite/static/js/787.973c7892.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90931784.css",
-    "static/js/main.c1ef0f6b.js"
+    "static/css/main.f121d698.css",
+    "static/js/main.5f544c06.js"
   ]
 }
