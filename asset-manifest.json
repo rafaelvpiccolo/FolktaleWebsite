@@ -1,19 +1,17 @@
 {
   "files": {
     "main.css": "/FolktaleWebsite/static/css/main.f121d698.css",
-    "main.js": "/FolktaleWebsite/static/js/main.dab87c5c.js",
-    "static/js/787.973c7892.chunk.js": "/FolktaleWebsite/static/js/787.973c7892.chunk.js",
+    "main.js": "/FolktaleWebsite/static/js/main.73ef5a7a.js",
     "static/media/gameImage.png": "/FolktaleWebsite/static/media/gameImage.ff7e94d203e09c0dd12a.png",
     "static/media/folktale_logo.png": "/FolktaleWebsite/static/media/folktale_logo.38c0b603a7e348d02372.png",
     "static/media/background_folktale.jpg": "/FolktaleWebsite/static/media/background_folktale.6875f1ffd6547d31df61.jpg",
     "static/media/dogica.woff": "/FolktaleWebsite/static/media/dogica.c5fc757a944c4bd75c4a.woff",
     "index.html": "/FolktaleWebsite/index.html",
     "main.f121d698.css.map": "/FolktaleWebsite/static/css/main.f121d698.css.map",
-    "main.dab87c5c.js.map": "/FolktaleWebsite/static/js/main.dab87c5c.js.map",
-    "787.973c7892.chunk.js.map": "/FolktaleWebsite/static/js/787.973c7892.chunk.js.map"
+    "main.73ef5a7a.js.map": "/FolktaleWebsite/static/js/main.73ef5a7a.js.map"
   },
   "entrypoints": [
     "static/css/main.f121d698.css",
-    "static/js/main.dab87c5c.js"
+    "static/js/main.73ef5a7a.js"
   ]
 }
